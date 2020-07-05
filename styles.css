@@ -1,0 +1,61 @@
+
+html, body {
+    margin-top: 50px;
+    padding: 0;
+    box-sizing: border-box;
+    background: #343434;
+    color: #fff; 
+    text-align: center;
+    font-family: "Helvetica Neue", "Arial";
+  }
+  
+  h1, h2 {
+    display: inline-block;
+    width: 100%;
+    font-size: 3em;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 3px;  
+    text-align: center;
+  }
+  
+  h1 {
+    color: #fff;
+    text-transform: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* TEXT-REFLECT CSS */
+  
+  .text-reflect, .text-reflect:before, .text-reflect span {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .text-reflect, .text-reflect:before, .text-reflect:after {
+    position: relative;
+  }
+  
+  .text-reflect {
+  }
+  
+  .text-reflect:before {
+    content: 'Andre van der Wal';
+    top: 95px;
+    transform: scale(1, -1);
+    backface-visibility: visible; 
+    z-index: 1;
+  }
+  
+  .text-reflect:after {
+    content: '';
+    display: block;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 60px; 
+    background-image: linear-gradient(to bottom, rgba(52, 52, 52, .4) 0%, rgba(52, 52, 52, 1) 50%);
+    z-index: 2;
+  }
